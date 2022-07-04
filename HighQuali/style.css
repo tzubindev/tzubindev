@@ -4,4 +4,20 @@ html {
 
 .logo {
     font-family: 'jsMath-cmmi10', sans-serif;
+    color: #fff;
+    left: 5%;
+    top: 3%;
+    position: absolute;
+    font-size: 1.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#000,#0C2F45);
 }
