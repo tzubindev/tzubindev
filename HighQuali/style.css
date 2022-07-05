@@ -3,7 +3,7 @@ html {
     overflow: hidden;
 }
 
-html:hover{
+html:hover {
     overflow: overlay;
 }
 
@@ -121,14 +121,36 @@ section a {
     border: 7px solid rgba(0, 0, 0, 0);
 }
 
+.vl {
+    position: absolute;
+    border-left: 6px solid #fff;
+    height: 200px;
+    top: 30.5%;
+    right: 150px;
+}
+
+.welcome {
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+}
+
+.welcome h1 {
+    position: absolute;
+    top: 30%;
+    right: 170px;
+}
+
 .highlight {
     height: 500px;
     width: 100%;
     background-color: rgb(155, 155, 155);
     margin-top: -4px;
 }
+
 footer {
     height: 500px;
     width: 100%;
-    background: linear-gradient(#000, #000, #0C2F45);   
+    background: linear-gradient(#000, #000, #0C2F45);
 }
