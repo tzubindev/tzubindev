@@ -129,11 +129,21 @@ section a {
     right: 150px;
 }
 
-h1 {
+.welcome {
     position: absolute;
-    top: 30%;
+    top: 32%;
     right: 170px;
     color: #fff;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+#w2 {
+    top: 37%;
+}
+
+#w3 {
+    top: 44%;
+    font-size: 72px;
 }
 
 .highlight {
