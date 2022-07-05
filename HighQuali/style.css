@@ -157,6 +157,7 @@ section a {
     right: 170px;
     color: #fff;
     font-family: 'JetBrains Mono', monospace;
+    cursor: default;
 }
 
 #w2 {
