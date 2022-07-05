@@ -2,10 +2,6 @@ html {
     background-color: #0C2F45;
 }
 
-html:hover {
-
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -35,8 +31,9 @@ body {
     height: auto;
     float: right;
     position: absolute;
-    top: 2.5%;
-    right: 20px;
+    top: 2%;
+    right: 30px;
+    padding-top: 10px;
     display: flex;
     justify-content: right;
     align-items: right;
@@ -81,6 +78,31 @@ body {
 .navBar ul li a:hover::after,
 .navBar ul li a:focus::after {
     transform: translate3d(0, 0, 0);
+}
+
+.navBar ul li:nth-child(6) {
+    position: relative;
+    padding: 3px;
+    display: inline-block;
+    border-radius: 20px;
+    margin-top: -8px;
+}
+
+
+#si {
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 17px;
+    font-size: 16px;
+    border: #fff solid 2px;
+    transition: border 0.3s, background 0.3s, color 0.3s;
+}
+
+#si:hover {
+    background: transparent;
+    color: #fff;
 }
 
 section img {
