@@ -10,7 +10,7 @@ html {
 
 body {
     min-height: 100vh;
-    background: linear-gradient(#000,#0C2F45);
+    background: linear-gradient(#000, #0C2F45);
 }
 
 .logo {
@@ -26,19 +26,18 @@ body {
     background-color: transparent;
     overflow: hidden;
     width: 60%;
+    height: 300px;
     float: right;
     position: absolute;
-    right: 30px;
     top: 2%;
+    right: 20px;
+    display: flex;
+    justify-content: right;
+    align-items: right;
 }
 
-.navBar-menu {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    list-style: none;
-    padding: 0 100px;
+.navBar ul {
+    list-style-type: none;
 }
 
 .navBar ul li {
@@ -49,59 +48,31 @@ body {
     text-align: center;
     padding: 10px;
     border-bottom: none;
-}
-
-.navBar-menu li{
-    display: block;
-    height: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    text-shadow: 0 0 15px #8e54e9;
-    transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
-    text-align: center;
-
-}
-
-.navBar-menu li:after,
-.navBar-menu li:before {
-    content: "";
-    position: absolute;
-    display: block;
-    border: 0px solid transparent;
-    width: 0%;
-    height: 0%;
-    transition: all 0.3s ease;
-}
-
-.navBar-menu li:after {
-    width: 0%;
-    height: 0%;
-    top: 0;
-    left: 0;
-    border-top: 2px solid transparent;
-    border-left: 2px solid transparent;
-}
-
-.navBar-menu li:before {
-    width: 0%;
-    height: 0%;
-    right: 0;
-    bottom: 0;
-    border-bottom: 2px solid transparent;
-    border-right: 2px solid transparent;
-}
-
-.navBar-menu li:hover::before,
-.navBar-menu li:hover::after {
-    width: 10px;
-    height: 10px;
-    border-color: #fff;
-}
-
-.navBar-menu li:hover{
     cursor: pointer;
 }
 
+.navBar ul li a {
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+    overflow: hidden;
+}
+
+.navBar ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 25px;
+    width: 100%;
+    height: 0.2em;
+    background-color: #fff;
+    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.navBar ul li a:hover::after,
+.navBar ul li a:focus::after {
+    transform: translate3d(0, 0, 0);
+}
