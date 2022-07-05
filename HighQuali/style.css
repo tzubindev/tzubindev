@@ -121,3 +121,9 @@ section a {
     border: 7px solid rgba(0, 0, 0, 0);
 }
 
+.highlight {
+    height: 500px;
+    width: 100%;
+    background-color: rgb(155, 155, 155);
+    margin-top: -4px;
+}
