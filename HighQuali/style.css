@@ -10,7 +10,7 @@ html {
 
 body {
     min-height: 100vh;
-    background: linear-gradient(#000, #0C2F45);
+    background: linear-gradient(#000,#000,#0C2F45);
 }
 
 .logo {
@@ -76,4 +76,19 @@ body {
 .navBar ul li a:hover::after,
 .navBar ul li a:focus::after {
     transform: translate3d(0, 0, 0);
+}
+
+section img{
+    height: 50%;
+    width: 100%;
+}
+
+section a{
+    text-decoration: none;
+    font-style: italic;
+    color: white;
+    font-size: 10px;
+    float: right;
+    opacity: 0.5;
+    margin-top: -20px;
 }
