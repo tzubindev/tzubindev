@@ -1,13 +1,11 @@
 var Hi_Mid = 0;
 const HI_RIGHT = 170;
-let HI = document.querySelector("#w3");
 
 window.onscroll = function () {
     if (document.documentElement.scrollTop > 600) {
         document.getElementById("w3").style.position = "absolute";
         document.getElementById("w3").style.top = "910px";
         document.getElementById("w3").style.right = HI_MID;
-        HI.style.color = "#000000";
 
 
     } else {
@@ -33,3 +31,11 @@ function parsePXtoInt(value) {
     value = value.replace("px", "");
     return parseInt(value);
 }
+
+$(document).ready(function () {
+    $("#btnExplore").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#highlight").offset().top
+        }, 2000);
+    });
+});
