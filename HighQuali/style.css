@@ -172,15 +172,57 @@ section a {
 .btnExplore {
     color: #fff;
     position: absolute;
-    right: 190px;
+    display: inline-block;
+    right: 178px;
     top: 55%;
     font-family: 'JetBrains Mono', monospace;
+    border: #fff 2px solid;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background, color 0.3s;
+}
+
+.btnExplore span {
+    position: relative;
+    z-index: 3;
+}
+
+.btnExplore::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 8px);
+    background: #020a17;
+    transition:  0.5s ease-in-out;
+    transform: scaleY(1);
+}
+
+.btnExplore::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 4px;
+    width: calc(100% - 8px);
+    height: calc(100% + 8px);
+    background: #020a17;
+    transition:  0.5s ease-in-out;
+    transform: scaleX(1);
+}
+
+.btnExplore:hover::before {
+    transform: scaleY(0);   
+}
+
+.btnExplore:hover::after {
+    transform: scaleX(0);   
 }
 
 .highlight {
     height: 450px;
     width: 100%;
-    background-color: rgb(194, 191, 191);
+    background-color: #222;
     margin-top: -4px;
 }
 
@@ -195,7 +237,6 @@ section a {
 .highlight img:nth-child(1) {
     left: 30%;
 }
-
 
 
 
