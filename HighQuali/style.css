@@ -167,6 +167,7 @@ section a {
 #w3 {
     top: 42%;
     font-size: 72px;
+    z-index: 4;
 }
 
 .btnExplore {
@@ -236,6 +237,10 @@ section a {
 
 .highlight img:nth-child(1) {
     left: 30%;
+}
+
+.highlight img:nth-child(3) {
+    left: 70%;
 }
 
 
