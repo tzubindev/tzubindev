@@ -55,6 +55,8 @@ body {
 }
 
 .navBar ul li a {
+    text-decoration: none;
+    color: #fff;
     display: block;
     position: relative;
     padding: 0.2em 0;

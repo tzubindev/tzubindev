@@ -1,3 +1,9 @@
+#login-body {
+    width: 100%;
+    background: url('/HighQuali/resource/login_background.jpg');
+    background-size: 100% 100%;
+}
+
 .base {
     width: 30%;
     height: 600px;
@@ -58,6 +64,7 @@
     color: #fff;
     text-align: center;
     font-family: 'JetBrains Mono', monospace;
+    cursor: pointer;
 }
 
 .log-ckbox {
@@ -76,14 +83,16 @@
 
 .log-rem {
     position: absolute;
-    margin-top: 9px;
+    margin-top: 10px;
     color: #fff;
     font-family: 'JetBrains Mono', monospace;
 }
 
 #log-btn {
     position: relative;
-    margin-top: 0px;
+    margin-top: 5px;
+    background: transparent;
+    border: #fff 2px solid;
     width: 100px;
     height: 30px;
     border-radius: 0px;
@@ -92,6 +101,12 @@
     text-align: center;
     font-family: 'JetBrains Mono', monospace;
     font-size: 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+#log-btn:hover {
+    background: #fff;
+    color: #000;
 }
 
 .breakline {
@@ -101,4 +116,11 @@
     width: 90%;
     margin: auto;
     margin-top: 80px;
+}
+
+#gg {
+    width: 80%;
+    position: relative;
+    transform: translate(22%);
+    margin-top: 20px;
 }
