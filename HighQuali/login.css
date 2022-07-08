@@ -1,11 +1,54 @@
 .base {
     width: 30%;
     height: 600px;
-    background: #333;
+    background: url('/HighQuali/resource/login_background.jpg');
+    background-size: 1000px 600px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-45%);
     border-radius: 30px;
     box-shadow: 0 0 20px 5px #fff;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.base:hover {
+    box-shadow: 0 0 10px 5px #fff;
+}
+
+.log-title {
+    color: #fff;
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+.log-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+
+#pw {
+    margin-top: 60px;
+}
+
+.log-txtbox {
+    display: block;
+    width: 70%;
+    height: 50px;
+    margin-top: -55px;
+    margin-left: 100px;
+    background: transparent;
+    border: none;
+    border-bottom: #fff 2px solid;
+    outline: 0;
+    color: #fff;
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
 }
