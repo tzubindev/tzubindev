@@ -83,7 +83,8 @@
 
 .log-rem {
     position: absolute;
-    margin-top: 10px;
+    margin-top: 13px;
+    font-size: 12px;
     color: #fff;
     font-family: 'JetBrains Mono', monospace;
 }
@@ -123,4 +124,21 @@
     position: relative;
     transform: translate(22%);
     margin-top: 20px;
+}
+
+.other {
+    display: block;
+    width: 65%;
+    height: 50px;
+    background: #fff;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 50px;
+    color:#2a2e3d;
+    transition: background 0.3s;
+}
+
+.other:hover {
+    background: rgb(184, 184, 184);
 }
