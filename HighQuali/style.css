@@ -267,6 +267,52 @@ section a {
     font-size: 72px;   
 }
 
+.hi-title {
+    position: absolute;
+    top: 155%;
+    color: #fff;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.hi-title > p::before {
+    transition: border 0.3s ease-in-out;
+}
+
+.hi-title > p:nth-child(1) {
+    position: absolute;
+    left: 398px;
+    text-align: center;   
+}
+
+.hi-title > p:nth-child(2) {
+    position: absolute;
+    left: 705px;
+    text-align: center;   
+}
+
+.hi-title > p:nth-child(3) {
+    position: absolute;
+    left: 990px;
+    text-align: center;   
+}
+
+.hi-title > p:hover::before {
+    content: '';
+    width: calc(100% + 100px);
+    height: 280px;
+    background: transparent;
+    border: #fff 3px solid;
+    border-radius: 10px;
+    position: absolute;
+    left: -55px;
+    top: -150px;
+}
+
+.hi-title > p:nth-child(3):hover::before {
+    left: -60px;
+}
 
 
 footer {
