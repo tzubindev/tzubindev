@@ -28,6 +28,7 @@
 
 .base:hover {
     box-shadow: 0 0 10px 5px #fff;
+    animation: none;
 }
 
 .log-title {
