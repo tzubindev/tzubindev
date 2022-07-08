@@ -11,6 +11,13 @@
     box-shadow: 0 0 20px 5px #fff;
     cursor: pointer;
     transition: box-shadow 0.3s;
+    animation: bs-float 3s infinite;
+}
+
+@keyframes bs-float {
+    0% {box-shadow: 0 0 30px 5px #fff;}
+    50% {box-shadow: 0 0 10px 5px #fff;} 
+    100% {box-shadow: 0 0 30px 5px #fff;}
 }
 
 .base:hover {
@@ -53,13 +60,34 @@
     font-family: 'JetBrains Mono', monospace;
 }
 
+.log-ckbox {
+    cursor: pointer;
+    margin-left: 100px;
+    margin-top: 16px;
+    box-shadow: none;
+    transition: box-shadow 0.3s; 
+}
+
+.log-ckbox:checked {
+    box-shadow: 0 0 10px 2px #fff;
+    border: none;
+    outline: none;
+}
+
+.log-rem {
+    position: absolute;
+    margin-top: 9px;
+    color: #fff;
+    font-family: 'JetBrains Mono', monospace;
+}
+
 #log-btn {
     position: relative;
-    margin-top: 20px;
+    margin-top: 0px;
     width: 100px;
     height: 30px;
     border-radius: 0px;
-    right: -322px;
+    right: -206px;
     color: #fff;
     text-align: center;
     font-family: 'JetBrains Mono', monospace;
