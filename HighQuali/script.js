@@ -1,12 +1,11 @@
 var Hi_Mid = 0;
-const HI_RIGHT = 170;
+const HI_RIGHT = 390;
 
 window.onscroll = function () {
-    if (document.documentElement.scrollTop > 600) {
+    if (document.documentElement.scrollTop > 602) {
         document.getElementById("w3").style.position = "absolute";
-        document.getElementById("w3").style.top = "910px";
-        document.getElementById("w3").style.right = HI_MID;
-
+        document.getElementById("w3").style.top = "122.5%";
+        document.getElementById("w3").style.right = "780.75px";
 
     } else {
         document.getElementById("w3").style.position = "fixed";
@@ -15,9 +14,13 @@ window.onscroll = function () {
         if (parsePXtoInt(getCssProperty("w3", "right")) <= HI_RIGHT) {
             document.getElementById("w3").style.right = HI_RIGHT + "px";
         }
-        if (document.documentElement.scrollTop <= 600) {
-            document.getElementById("w3").style.right = (HI_RIGHT * 2.40 * document.documentElement.scrollTop / 600 + HI_RIGHT) + "px";
-            if (document.documentElement.scrollTop === 600) Hi_Mid = getCssProperty("w3", "right");
+        if (document.documentElement.scrollTop <= 602) {
+            if (parsePXtoInt(getCssProperty("w3", "right")) < 780.75) {
+                document.getElementById("w3").style.right = (HI_RIGHT * 1.01 * document.documentElement.scrollTop / 600 + HI_RIGHT) + "px";
+            }
+            else {
+                document.getElementById("w3").style.right = "780.75px";
+            }
         }
     }
 }
