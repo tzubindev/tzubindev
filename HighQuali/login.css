@@ -110,6 +110,31 @@
     color: #000;
 }
 
+.log-reg {
+    position: absolute;
+    margin-top: 54px;
+    margin-left: 80px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.log-reg > a::before {
+    content: '';
+    top: -10px;
+    width: 89px;
+    height: 10px;
+    border-bottom: #fff solid 3px;
+    z-index: 2;
+    position: absolute;
+    display: inline;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.log-reg > a:hover::before {
+    transform: scaleX(1);   
+}
+
 .breakline {
     border: none;
     border-top: #fff 1px solid;
