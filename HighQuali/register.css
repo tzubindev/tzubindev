@@ -22,7 +22,6 @@
 
 .reg-form:hover {
     box-shadow: 0 0 10px 5px #fff;
-    opacity: 0.7;
 }
 
 .reg-title{
@@ -33,4 +32,26 @@
     top: 100px;
     transform: translate(-50%,0);
     font-family: 'JetBrains Mono', monospace;
+}
+
+.reg-form label {
+    color: #fff;
+    font-family: 'JetBrains Mono', monospace;
+    display: block;
+    text-align: left;
+    margin-left: 50px;
+
+}
+
+.reg-form label:nth-child(1) {
+    margin-top: 150px;
+}
+
+
+.txtfield {
+    display: block;
+    width: 80%;
+    height: 30px;
+    border-bottom: #fff solid 3px;
+    margin-bottom: 30px;
 }
