@@ -119,10 +119,20 @@
     font-size: 12px;
 }
 
+.log-reg a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+.log-reg a:hover {
+    color: #fff;
+}
+
 .log-reg > a::before {
     content: '';
     top: -10px;
-    width: 89px;
+    width: 97px;
     height: 10px;
     border-bottom: #fff solid 3px;
     z-index: 2;
