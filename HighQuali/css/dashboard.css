@@ -1,0 +1,21 @@
+#login-body {
+    width: 100%;
+    background: #070707;
+}
+
+.sidebar {
+    color: #fff;
+    width: 30%;
+    position: absolute;
+    top: 100px;
+}
+
+.sidebar img {
+    width: 30px;
+    height: 30px;
+}
+
+.sidebar a {
+    width: 70%;
+}
+
