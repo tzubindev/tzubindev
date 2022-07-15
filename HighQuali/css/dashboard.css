@@ -3,6 +3,14 @@
     background: #070707;
 }
 
+.title {
+    font-family: 'jsMath-cmmi10', sans-serif;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 80px;
+}
+
 .sidebar {
     color: #fff;
     width: 30%;
@@ -13,9 +21,16 @@
 .sidebar img {
     width: 30px;
     height: 30px;
+    margin-left: 20px;
 }
 
 .sidebar a {
     width: 70%;
+    margin-left: 10px;
+}
+
+.selection {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
