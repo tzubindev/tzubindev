@@ -1,6 +1,6 @@
 #login-body {
     width: 100%;
-    background: #070707;
+    background: linear-gradient(#000, #000, #0C2F45);
 }
 
 .title {
@@ -8,14 +8,19 @@
     color: #fff;
     position: absolute;
     left: 50%;
+    transform: translate(-50%, 0%);
     top: 80px;
+    font-size: 32px;
+
 }
 
 .sidebar {
     color: #fff;
-    width: 30%;
+    width: 20%;
     position: absolute;
+    font-family: 'JetBrains Mono', monospace;
     top: 100px;
+    cursor: pointer;
 }
 
 .sidebar img {
@@ -30,7 +35,35 @@
 }
 
 .selection {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    margin-top: 10px;
 }
 
+.selection-active {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    border-radius: 0 10px 10px 0;
+    background: #393939;
+}
+
+.selection:nth-child(1) {
+    margin-top: 80px;
+}
+
+.selection::after {
+    content: '';
+    position: absolute;
+    margin-top: -35px;
+    width: 0%;
+    height: 0.2em;
+    background-color: #fff;
+    transition: opacity 300ms, width 300ms;
+}
+
+.selection:hover::after,
+.selection:focus::after {
+    width: 80%;
+}
