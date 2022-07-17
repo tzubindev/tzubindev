@@ -58,32 +58,36 @@
     position: absolute;
     margin-top: -30px;
     left: 80%;
-    width: 0px;
-    height: 0.2em;
+    width: 5px;
+    height: 30px;
+    opacity: 0;
     border-radius: 0 10px 10px 0;
     background-color: #fff;
-    transition: height 300ms, width 300ms;
+    transition: opacity 300ms, transform 300ms;
+    transform: translateX(100%);
 }
 
 .selection::before {
     content: '';
     position: absolute;
     margin-top: 0px;
-    width: 0px;
-    height: 0.2em;
+    width: 5px;
+    height: 30px;
+    opacity: 0;
     border-radius: 10px 0 0 10px;
     background-color: #fff;
-    transition: height 300ms, width 300ms;
+    transition: opacity 300ms, transform 300ms;
+    transform: translateX(-100%);
 }
 
 .selection:hover::after,
 .selection:focus::after {
-    width: 5px;
-    height: 30px;
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .selection:hover::before,
 .selection:focus::before {
-    width: 5px;
-    height: 30px;
+    opacity: 1;
+    transform: translateX(0);
 }
