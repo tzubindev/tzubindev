@@ -1,6 +1,6 @@
 #login-body {
     width: 100%;
-    background: linear-gradient(#000, #000, #031927);
+    background: linear-gradient(#000, #01111b);
 }
 
 .title {
@@ -40,6 +40,11 @@
     padding-bottom: 2px;
     padding-left: 20px;
     margin-top: 10px;
+}
+
+.sidebar hr{
+    width: 80%;
+    margin: auto;
 }
 
 .selection-active {
