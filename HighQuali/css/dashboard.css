@@ -251,13 +251,55 @@ body {
     transform: translateX(0);
 }
 
+.searchbar input{
+    width: 400px;
+    height: 40px;
+    background: #fff;
+    position: absolute;
+    left: 80%;
+    top: 200px;
+    transform: translate(-50%, -50%);
+    border-radius: 0 20px 20px 0;
+    text-align: center;
+    border: none;
+    box-shadow: 0 0 10px 4px #777;
+}
+
+.search-title {
+    font-family: 'JetBrains Mono', monospace;   
+    color: #000;
+    background: #fff;
+    text-transform: uppercase;   
+    position: absolute;
+    left: 57.5%;
+    top: 180px;
+    height: 40px;
+    padding: 10px 5px 10px 10px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0 0 10px 4px #777;
+    cursor: default;
+}
+
+.searchbar input:focus{
+    outline: none;
+}
+
+#search {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    left: 90%;
+    top: 185px;
+    position: absolute;
+}
+
 .summary-view {
     width: 55%;
     height: auto;
     position: absolute;
     background: transparent;
     left: 22%;
-    top: 150px;
+    top: 230px;
 }
 
 .summary-caption {
@@ -267,18 +309,18 @@ body {
     font-family: 'JetBrains Mono', monospace;    
     color: #000;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 20px;  
 }
 
 .caption {
     padding-top: 4px;
     padding-bottom: 4px;
     padding-right: 5px;
-    margin-top: 15px;
+    margin-top: 20px;
     width: 65%;
     float: right;
     background: #ccc;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 .summary-value {
@@ -295,6 +337,6 @@ body {
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 25px;
-    margin-top: 15px;
+    margin-top: 20px;
     width: 100%;
 }
