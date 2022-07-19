@@ -1,10 +1,11 @@
 #login-body {
     width: 100%;
-    background: linear-gradient(#000, #000, #0C2F45);
+    background: linear-gradient(#000, #000, #031927);
 }
 
 .title {
-    font-family: 'jsMath-cmmi10', sans-serif;
+    font-family: 'JetBrains Mono', sans-serif;
+    text-transform: uppercase;
     color: #fff;
     position: absolute;
     left: 50%;
