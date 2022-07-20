@@ -322,7 +322,7 @@ body {
     padding-bottom: 4px;
     padding-right: 5px;
     margin-top: 20px;
-    width: 65%;
+    width: 70%;
     float: right;
     background: #ccc;
     border-radius: 3px;
@@ -370,8 +370,8 @@ body {
     font-family: 'JetBrains Mono', monospace;
     padding: 0;
     margin: auto;
-    width: 80%;
-    text-align: left;
+    width: 90%;
+    text-align: right;
     font-style: italic;
     font-size: 14px;
 }
@@ -380,7 +380,8 @@ body {
 .analysis-2 p:nth-child(3),
 .analysis-3 p:nth-child(3),
 .analysis-4 p:nth-child(3) {
-    margin-top: -30px;
+    position: absolute;
+    margin-top: -10px;
     color: #fff;
     font-style: normal;
     text-align: right;
@@ -395,7 +396,7 @@ body {
     height: 60px;
     margin-left: 20px;
     margin-bottom: 10px;
-    
+
 }
 
 .analysis-3,
@@ -411,4 +412,58 @@ body {
 .analysis-2,
 .analysis-4 {
     top: 440px;
+}
+
+.overview-break {
+    position: absolute;
+    color: #fff;
+    width: 75%;
+    left: 22%;
+    top: 630px;
+}
+
+.analysis-title {
+    position: absolute;
+    color: #fff;
+    width: 75%;
+    left: 22%;
+    top: 650px;    
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#curve_chart {
+    position: absolute;
+    top: 90%;
+    left: 14%;
+}
+
+.know-more-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px;  
+    color: #fff;
+    background: #393939;
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 88%;
+    right: 45px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 100ms, border 100ms, border-radius 100ms;
+}
+
+.know-more-btn p {
+    padding-top: 9px;
+}
+
+.know-more-btn:hover{
+    background: transparent;
+    border: #fff 2px solid;
+    border-radius: 5px;
+}
+
+.know-more-btn:hover p {
+    padding-top: 7px;
 }

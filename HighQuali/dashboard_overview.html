@@ -23,7 +23,10 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/chart.js"></script>
+
     <title>HighQuali</title>
 </head>
 
@@ -60,6 +63,9 @@
         <div class="selection">
             <div><img src="https://img.icons8.com/ios/100/FFFFFF/play-button-circled--v1.png" /><a>Live</a></div>
         </div>
+        <div class="selection">
+            <div><img src="https://img.icons8.com/ios/100/FFFFFF/bearish.png"/><a>Analysis</a></div>
+        </div>
         <br>
         <br>
         <hr>
@@ -75,7 +81,7 @@
     <div class="searchbar">
         <div class="search-title">Event</div>
         <input type="text">
-        <img src="https://img.icons8.com/ios/100/000000/search--v1.png" id="search"/>
+        <img src="https://img.icons8.com/ios/100/000000/search--v1.png" id="search" />
     </div>
 
     <div class="summary-view">
@@ -116,21 +122,35 @@
     </div>
 
     <div class="analysis-1">
-        <img src="https://img.icons8.com/ios/100/FFFFFF/edit-user-male.png"/>
+        <img src="https://img.icons8.com/ios/100/FFFFFF/edit-user-male.png" />
         <p>New Participants Today</p>
         <p>30</p>
     </div>
 
     <div class="analysis-2">
-
+        <img src="https://img.icons8.com/ios/100/ffffff/alarm.png" />
+        <p>New Message Today</p>
+        <p>12</p>
     </div>
 
     <div class="analysis-3">
-
+        <img src="https://img.icons8.com/ios/100/ffffff/estimates.png" />
+        <p>Budget</p>
+        <p>$ 3000</p>
     </div>
 
     <div class="analysis-4">
-
+        <img src="https://img.icons8.com/ios/100/FFFFFF/queue.png" />
+        <p>Total People Involved</p>
+        <p>125</p>
     </div>
 
+    <br>
+    <br>
+
+    <hr class="overview-break">
+    <div class="analysis-title">Analysis</div>
+    <div id="curve_chart"></div>
+
+    <div class="know-more-btn"><p>Know More</p></div>
 </body>
