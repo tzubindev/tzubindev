@@ -42,3 +42,26 @@ $(document).ready(function () {
         }, 2000);
     });
 });
+ 
+
+function clickType(obj) {
+    var foo = document.getElementById("ft");
+    var foo2 = document.getElementById("it");
+
+    defaultType(foo);
+    defaultType(foo2);
+
+
+    if (obj.style.backgroundColor !== "rgb(255, 255, 255)") {
+        obj.style.backgroundColor = "#fff";
+        obj.style.color = "#000";
+    }
+    else { 
+        defaultType(obj);
+    }
+}
+
+function defaultType(obj) {
+    obj.style.backgroundColor = "transparent";
+    obj.style.color = "#fff"; 
+}
