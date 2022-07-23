@@ -61,11 +61,12 @@
                 <p>Company Information</p>
             </div>
             <div class="feature"><img src="https://img.icons8.com/ios/100/FFFFFF/submit-resume.png"/>
-                <p>Manage Posts</p>
+                <p>Manage Application</p>
             </div>
         </div>
     </div>
 
+    <div id="titleArr"></div>
     <div class="post">
         <div class="ptitle">Posting</div>
 
@@ -76,15 +77,32 @@
         <br>
         <br>
         <br>
-        <label>Job Title *</label><br>
-        <input type="text" class="jtitle" id="jtitle"> <img src="https://img.icons8.com/ios/100/FFFFFF/login-rounded-right--v1.png" id="enter" onclick="createBlock()"/><div id="titleArr"></div>
+        <label>Job Names * (Max: 3 names in 1 post)</label><br>
+        <input type="text" class="jtitle" id="jtitle"> <img src="https://img.icons8.com/ios/100/FFFFFF/login-rounded-right--v1.png" id="enter" onclick="createBlock()"/>
 
         <br>
         <br>
-        <label>Qualification *</label><br>
+        <label>Qualification * </label><br>
+        <textarea cols="100" class="ta"></textarea>
 
         <br>
         <br>
         <label>Preference (Optional) </label><br>
+        <textarea cols="100" class="ta"></textarea>
+
+        <br>
+        <br>
+        <label>Salary Range (Optional) </label><br>
+        <input type="text" class="jtitle">
+
+
+        <br>
+        <br>
+        <label>Welfare (Optional) </label><br>
+        <textarea cols="100" class="ta"></textarea>
+
+        <br><br>
+        <input type="checkbox"><label class="agree">I understood the x policy / agreement.</label>
+        <div class="btnPost">Post</div>
     </div>
 </body>

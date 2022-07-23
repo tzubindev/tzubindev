@@ -1,5 +1,5 @@
 html {
-    background: #01111b;
+    background: #001725;
     height: 700px;
 }
 
@@ -11,7 +11,7 @@ html {
 
 body {
     min-height: 100vmin;
-    background: linear-gradient(#000, #01111b);
+    background: linear-gradient(#000, #001725);
     overflow: overlay;
 }
 
@@ -303,8 +303,8 @@ body {
 }
 
 .feature:nth-child(4):hover::after{
-    margin-top: -50px;
-    height: 40px; 
+    margin-top: -75px;
+    height: 60px; 
 }
 
 
@@ -374,7 +374,7 @@ body {
     width: 315px;
     height: 40px;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: default;
     text-align: center;
 }
 
@@ -385,15 +385,16 @@ body {
 
 #titleArr {
     position: absolute;
-    width: 70%;
-    height: 30px;
-    top: 88%;
-    left: 35%;
+    width: 50%;
+    height: 50px;
+    top: 51.5%;
+    left: 50%;
+    z-index: 20;
 }
 
 #enter {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
 }
 
@@ -405,4 +406,43 @@ body {
     background: #bbb;
     cursor: pointer;   
     border-radius: 5px;
+}
+
+.ta:focus {
+    outline: none;
+    cursor: default;
+}
+
+.ta {
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: default;
+}
+
+.agree {
+    margin-left: 20px;
+}
+
+.btnPost {
+    width: 100px;
+    height: 40px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    color: #000;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    transition: background 200ms, border 200ms, color 200ms, line-height 100ms;
+}
+
+.btnPost:hover {
+    border: #fff 3px solid;
+    background: transparent;
+    color: #fff;
+    line-height: 25px;
 }
