@@ -42,7 +42,7 @@ $(document).ready(function () {
         }, 2000);
     });
 });
- 
+
 
 function clickType(obj) {
     var foo = document.getElementById("ft");
@@ -56,12 +56,24 @@ function clickType(obj) {
         obj.style.backgroundColor = "#fff";
         obj.style.color = "#000";
     }
-    else { 
+    else {
         defaultType(obj);
     }
 }
 
 function defaultType(obj) {
     obj.style.backgroundColor = "transparent";
-    obj.style.color = "#fff"; 
+    obj.style.color = "#fff";
+}
+
+function createBlock() {
+    const newDiv = document.createElement("div");
+    const newContent = document.createTextNode(document.getElementById("jtitle").value);
+    newDiv.appendChild(newContent);
+    newDiv.id = "block";
+    newDiv.onclick = function () {
+        this.parentElement.removeChild(this);
+    };    
+    const titleArr = document.getElementById("titleArr");
+    titleArr.appendChild(newDiv);
 }

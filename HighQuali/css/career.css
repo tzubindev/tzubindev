@@ -297,6 +297,16 @@ body {
     height: 60px; 
 }
 
+.feature:nth-child(4){
+    margin-top: 45px;
+    height: 60px; 
+}
+
+.feature:nth-child(4):hover::after{
+    margin-top: -50px;
+    height: 40px; 
+}
+
 
 .feature img {
     width: 30px;
@@ -357,4 +367,42 @@ body {
 .type:hover {
     border: #fff 2px solid;
     margin-right: 33px;
+}
+
+.jtitle {
+    margin-top: 15px;
+    width: 315px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.jtitle:focus {
+    outline: none;
+    text-align: center;
+}
+
+#titleArr {
+    position: absolute;
+    width: 70%;
+    height: 30px;
+    top: 88%;
+    left: 35%;
+}
+
+#enter {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#block {
+    color: #000;
+    display: inline;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background: #bbb;
+    cursor: pointer;   
+    border-radius: 5px;
 }
