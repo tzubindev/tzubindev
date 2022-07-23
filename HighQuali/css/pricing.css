@@ -69,14 +69,15 @@
     font-weight: 600;
     letter-spacing: 1px;
 }
-
-
-
 .pricing-features {
     color: #a2ccff;
     font-weight: 600;
     letter-spacing: 1px;
     margin: 50px 0 25px;
+}
+
+.space {
+    margin-top: 23px;
 }
 
 .pricing-features-item {
@@ -126,3 +127,19 @@
 .large-margin {
     margin-top: 27px;
 }
+
+.container-2 { 
+    height: 50px;
+    position: relative;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
