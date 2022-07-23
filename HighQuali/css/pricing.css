@@ -1,15 +1,15 @@
-
 /*bp*/
 .background {
     padding: 0 0 25px;
-    background-color: #222222;
+    background-color: #bfffcf;
+    background: linear-gradient(#222222,#111111,#000000);
 }
 
 
 .container {
     margin: 0 auto;
     padding: 50px 0 0;
-    max-width: 960px;
+    max-width: 61%;
     width: 100%;
 }
 
@@ -34,11 +34,9 @@
 
 .pricing-table * {
     text-align: center;
-    text-transform: uppercase;
 }
 
 .pricing-plan {
-    border-bottom: 1px solid #e1f1ff;
     padding: 25px;
 }
 
@@ -49,7 +47,7 @@
 /*bp*/
 .pricing-plan {
     border-bottom: none;
-    border-right: 1px solid #e1f1ff;
+    border-right: 1px solid #fefeff;
     flex-basis: 100%;
     padding: 25px 50px;
 }
@@ -65,13 +63,15 @@
 }
 
 .pricing-header {
-    color: #fff;
-    font-weight: 600;
+    color: #fefeff;
+    font-weight: 500;
     letter-spacing: 1px;
+    padding: 5%;
+    font-size: 28px;
 }
 .pricing-features {
-    color: #a2ccff;
-    font-weight: 600;
+    color: #fefeff;
+    font-weight: 500;
     letter-spacing: 1px;
     margin: 50px 0 25px;
 }
@@ -81,18 +81,18 @@
 }
 
 .pricing-features-item {
-    border-top: 1px solid #e1f1ff;
-    font-size: 12px;
+    border-bottom: 1px solid #fefeff;
+    font-size: 16px;
     line-height: 1.5;
     padding: 15px 0;
 }
 
 .pricing-features-item:last-child {
-    border-bottom: 1px solid #e1f1ff;
+    border-bottom: 1px solid #fefeff;
 }
 
 .pricing-price {
-    color: #a2ccff;
+    color: #fefeff;
     display: block;
     font-size: 32px;
     font-weight: 700;
@@ -111,17 +111,17 @@
 
 .pricing-button:hover,
 .pricing-button:focus {
-    background-color: #e1f1ff;
+    background-color: #fefeff;
 }
 
 .pricing-button.is-featured {
-    background-color: #48aaff;
+    background-color: #289bff;
     color: #fff;
 }
 
 .pricing-button.is-featured:hover,
 .pricing-button.is-featured:active {
-    background-color: #269aff;
+    background-color: #087ee6;
 }
 
 .large-margin {
@@ -137,9 +137,18 @@
     margin: 0;
     position: absolute;
     top: 50%;
-    left: 47%;
+    left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
 
+.backdrop {
+    background-color: #289bffa9;
+    border-radius: 5%;
+}
+h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
