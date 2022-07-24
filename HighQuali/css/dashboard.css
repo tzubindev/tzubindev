@@ -83,7 +83,7 @@ body {
     transform: translate3d(0, 0, 0);
 }
 
-.navBar ul li:nth-child(6) {
+.navBar ul li:nth-child(7) {
     position: relative;
     padding: 3px;
     display: inline-block;
