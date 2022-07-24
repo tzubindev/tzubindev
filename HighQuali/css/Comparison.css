@@ -1,7 +1,11 @@
 body {
   min-height: 100vh;
-  background-color: #14213D;
+  background-color: #09142c;
   overflow: overlay;
+}
+
+html {
+  height: 900px;
 }
 
 * {
@@ -17,32 +21,64 @@ body {
   top: 10%;
   right: 5%;
 }
+
+/* Scroll Bar*/
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 7px solid rgba(0, 0, 0, 0);
+  transition: background 1s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 7px solid rgba(0, 0, 0, 0);
+}
+
 .price-table {
   width: 100%;
   border-collapse: collapse;
   border: 0 none;
+  margin-top: 10px;
 }
+
 .price-table tr:not(:last-child) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.03);
 }
+
 .price-table tr td {
   border-left: 1px solid rgba(0, 0, 0, 0.05);
   padding: 12px 24px;
   font-size: 16px;
 }
+
 .price-table tr td:first-child {
   border-left: 0 none;
 }
+
 .price-table tr td:not(:first-child) {
   text-align: center;
 }
-.price-table tr:nth-child(even){
+
+.price-table tr:nth-child(even) {
   background-color: #FFFFFF10;
 }
+
 .price-table tr:hover {
   background-color: #ffffff4B;
 }
-.price-table{
+
+.price-table {
   color: #ffffff;
 }
 
@@ -53,27 +89,30 @@ body {
   font-family: "Montserrat";
   text-transform: uppercase;
 }
+
 .price-table tr.price-table-head {
-  background-color: #5336ca;
+  background-color: #51457c;
   color: #FFFFFF;
 }
 
-.little{
+.little {
   font-size: 14px;
   font-weight: 400;
 }
+
 .price-table td.price {
-  color: #f43f54;
+  color: #a9a9c5;
   padding: 16px 24px;
   font-size: 24px;
   font-weight: 600;
   font-family: "Montserrat";
 }
+
 .price-table td.price a {
-  background-color: #5336ca;
+  background-color: #51457c;
   color: #FFFFFF;
   padding: 12px 32px;
-  margin-top: 16px;
+  margin-top: 0px;
   font-size: 14px;
   font-weight: 600;
   font-family: "Montserrat";
@@ -82,6 +121,7 @@ body {
   border-radius: 64px;
   text-decoration: none;
 }
+
 .price-table td.price-table-popular {
   font-family: "Montserrat";
   border-top: 3px solid #5336ca;
@@ -91,6 +131,7 @@ body {
   padding: 12px 48px;
   font-weight: 700;
 }
+
 .price-table .price-blank {
   background-color: #fafafa;
   border: 0 none;
