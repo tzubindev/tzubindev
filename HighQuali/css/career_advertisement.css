@@ -306,3 +306,41 @@ body {
 .adv-pk img {
     margin-top: 30px;
 }
+
+.adv-pk-des {
+    margin-top: 20px;
+}
+
+div.btnPurchase {
+    width: 70%;
+    margin: auto;
+    margin-top: 210px;
+    padding: 5px 10px;
+    background: #fff;
+    color: #000;   
+    transition: background 100ms, margin-top 100ms;
+}
+
+div.btnPurchase:hover {
+    background: #bbb;
+}
+
+.adv-pk:nth-child(2) .btnPurchase {
+    margin-top: 170px;
+}
+
+.adv-pk:nth-child(3) .btnPurchase {
+    margin-top: 130px;
+}
+
+.adv-pk:hover .btnPurchase {
+    margin-top: 250px;
+}
+
+.adv-pk:nth-child(2):hover .btnPurchase {
+    margin-top: 210px; 
+}
+
+.adv-pk:nth-child(3):hover .btnPurchase {
+    margin-top: 170px;
+}
