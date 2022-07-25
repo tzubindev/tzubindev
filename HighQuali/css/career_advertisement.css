@@ -234,3 +234,70 @@ body {
     text-align: unset;
     transition: font-size 100ms, text-align 100ms;
 }
+
+/* ------------------------------------------------------- */
+
+.adv {
+    width: calc(70% + 10px);
+    height: 500px;
+    position: absolute;
+    top: 12%;
+    left: 23%;
+    color: #fff;
+    font-family: 'JetBrains Mono', monospace;
+    background: rgb(129, 129, 129);
+    border-radius: 40px 40px 0 0;
+    cursor: default;
+}
+
+.adv-title {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.adv-pk-title {
+    text-transform: uppercase;
+    font-size: 30px;   
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.adv-pks {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 30px;
+}
+
+.adv-pk {
+    text-align: center;
+    background: rgb(71, 71, 71);
+    width: 90%;
+    height: 600px;
+    margin-left: 40px;
+    margin-bottom: 100px;
+    cursor: pointer;
+    transition: width 100ms, margin-left 100ms, height 100ms, margin-top 100ms;
+}
+
+.adv-pk:hover {
+    width: 100%;
+    margin-left: 25px;
+    height: 650px;
+    margin-top: -25px;
+}
+
+.adv-pk-subtitle {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.adv-pk hr {
+    width: 90%;
+    margin: auto;
+}
