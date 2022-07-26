@@ -1,0 +1,238 @@
+html {
+    background: #001725;
+    height: 700px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vmin;
+    background: linear-gradient(#000, #001725);
+    overflow: overlay;
+}
+
+.logo {
+    font-family: 'jsMath-cmmi10', sans-serif;
+    color: #fff;
+    left: 30px;
+    top: 3%;
+    position: absolute;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navBar {
+    background-color: transparent;
+    overflow: hidden;
+    width: 60%;
+    height: auto;
+    float: right;
+    position: absolute;
+    top: 2%;
+    right: 30px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+.navBar ul {
+    list-style-type: none;
+}
+
+.navBar ul li {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'JetBrains Mono', monospace;
+    float: left;
+    text-align: center;
+    padding: 0 15px;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.navBar ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+    overflow: hidden;
+}
+
+.navBar ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    height: 0.2em;
+    background-color: #fff;
+    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.navBar ul li a:hover::after,
+.navBar ul li a:focus::after {
+    transform: translate3d(0, 0, 0);
+}
+
+.navBar ul li:nth-child(7) {
+    position: relative;
+    padding: 3px;
+    display: inline-block;
+    border-radius: 20px;
+    margin-top: -8px;
+}
+
+#si {
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 17px;
+    font-size: 16px;
+    border: #fff solid 2px;
+    transition: border 0.3s, background 0.3s, color 0.3s;
+}
+
+#si:hover {
+    background: transparent;
+    color: #fff;
+}
+
+
+/* Scroll Bar*/
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 7px solid rgba(0, 0, 0, 0);
+    transition: background 1s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 7px solid rgba(0, 0, 0, 0);
+}
+
+/* basic setting above */
+
+.sidebar {
+    position: absolute;
+    width: 20%;
+    top: 100px;
+}
+
+.sidebar img {
+    margin: auto;
+    display: block;
+}
+
+.user_name {
+    display: block;
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 25px;  
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 20px; 
+}
+
+.sidebar > hr {
+    color: #fff;
+    width: 90%;
+    margin: auto;
+}
+
+.features {
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.feature {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.feature:hover img {
+    opacity: 0;
+}
+
+.feature:hover p {
+    font-size: 25px;
+    text-align: right;
+}
+
+.feature::after {
+    content: '';
+    width: 0.2em;
+    height: 0px;
+    position: absolute;
+    background: #fff;
+    margin-top: -50px;
+    right: 0;
+    transition: height 100ms;
+}
+
+.feature:hover::after{
+    height: 40px; 
+}
+
+.feature:nth-child(3):hover::after{
+    margin-top: -75px;
+    height: 60px; 
+}
+
+.feature:nth-child(4){
+    margin-top: 45px;
+    height: 60px; 
+}
+
+.feature:nth-child(4):hover::after{
+    margin-top: -75px;
+    height: 60px; 
+}
+
+
+.feature img {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: opacity 130ms;
+}
+
+.feature p {
+    line-height: 30px;
+    color: #fff;
+    vertical-align: middle;
+    margin-left: 80px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 22px;    
+    cursor: pointer;  
+    text-align: unset;
+    transition: font-size 100ms, text-align 100ms;
+}
+
+/* ------------------------------------------------------- */
