@@ -148,13 +148,13 @@ body {
     display: block;
     text-align: center;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 25px;  
+    font-size: 25px;
     color: #fff;
     text-transform: uppercase;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
-.sidebar > hr {
+.sidebar>hr {
     color: #fff;
     width: 90%;
     margin: auto;
@@ -194,23 +194,23 @@ body {
     transition: height 100ms;
 }
 
-.feature:hover::after{
-    height: 40px; 
+.feature:hover::after {
+    height: 40px;
 }
 
-.feature:nth-child(3):hover::after{
+.feature:nth-child(3):hover::after {
     margin-top: -75px;
-    height: 60px; 
+    height: 60px;
 }
 
-.feature:nth-child(4){
+.feature:nth-child(4) {
     margin-top: 45px;
-    height: 60px; 
+    height: 60px;
 }
 
-.feature:nth-child(4):hover::after{
+.feature:nth-child(4):hover::after {
     margin-top: -75px;
-    height: 60px; 
+    height: 60px;
 }
 
 
@@ -229,8 +229,8 @@ body {
     vertical-align: middle;
     margin-left: 80px;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 22px;    
-    cursor: pointer;  
+    font-size: 22px;
+    cursor: pointer;
     text-align: unset;
     transition: font-size 100ms, text-align 100ms;
 }
@@ -239,14 +239,14 @@ body {
 
 .adv {
     width: calc(70% + 10px);
-    height: 500px;
+    height: 800px;
     position: absolute;
     top: 12%;
     left: 23%;
     color: #fff;
     font-family: 'JetBrains Mono', monospace;
-    background: rgb(129, 129, 129);
-    border-radius: 40px 40px 0 0;
+    background: transparent;
+    border-radius: 0;
     cursor: default;
 }
 
@@ -259,7 +259,7 @@ body {
 
 .adv-pk-title {
     text-transform: uppercase;
-    font-size: 30px;   
+    font-size: 30px;
     margin-top: 10px;
     margin-bottom: 20px;
     text-align: center;
@@ -273,7 +273,12 @@ body {
 
 .adv-pk {
     text-align: center;
-    background: rgb(71, 71, 71);
+    background: url('/HighQuali/resource/adv_back.jpg');
+    background-size: 300%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #000;
     width: 90%;
     height: 600px;
     margin-left: 40px;
@@ -317,7 +322,7 @@ div.btnPurchase {
     margin-top: 210px;
     padding: 5px 10px;
     background: #fff;
-    color: #000;   
+    color: #000;
     transition: background 100ms, margin-top 100ms;
 }
 
@@ -338,7 +343,7 @@ div.btnPurchase:hover {
 }
 
 .adv-pk:nth-child(2):hover .btnPurchase {
-    margin-top: 210px; 
+    margin-top: 210px;
 }
 
 .adv-pk:nth-child(3):hover .btnPurchase {
