@@ -73,7 +73,7 @@ function createBlock() {
     newDiv.id = "block";
     newDiv.onclick = function () {
         this.parentElement.removeChild(this);
-    };    
+    };
     const titleArr = document.getElementById("titleArr");
     titleArr.appendChild(newDiv);
 }
