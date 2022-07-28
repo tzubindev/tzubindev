@@ -1,6 +1,6 @@
 html {
     background: #001725;
-    height: 700px;
+    height: 500px;
 }
 
 * {
@@ -241,7 +241,7 @@ body {
     width: calc(70% + 10px);
     height: 800px;
     position: absolute;
-    top: 12%;
+    top: 9%;
     left: 23%;
     color: #fff;
     font-family: 'JetBrains Mono', monospace;
@@ -280,7 +280,7 @@ body {
     background-position: center;
     color: #000;
     width: 90%;
-    height: 600px;
+    height: 500px;
     margin-left: 40px;
     margin-bottom: 100px;
     cursor: pointer;
@@ -291,7 +291,7 @@ body {
 .adv-pk:hover {
     width: 100%;
     margin-left: 25px;
-    height: 650px;
+    height: 550px;
     margin-top: -25px;
 }
 
@@ -319,10 +319,10 @@ body {
 div.btnPurchase {
     width: 70%;
     margin: auto;
-    margin-top: 210px;
+    margin-top: 120px;
     padding: 5px 10px;
-    background: #fff;
-    color: #000;
+    background: rgb(90, 90, 90);
+    color: #fff;
     transition: background 100ms, margin-top 100ms;
 }
 
@@ -331,21 +331,21 @@ div.btnPurchase:hover {
 }
 
 .adv-pk:nth-child(2) .btnPurchase {
-    margin-top: 170px;
+    margin-top: 75px;
 }
 
 .adv-pk:nth-child(3) .btnPurchase {
-    margin-top: 130px;
+    margin-top: 30px;
 }
 
 .adv-pk:hover .btnPurchase {
-    margin-top: 250px;
+    margin-top: 160px;
 }
 
 .adv-pk:nth-child(2):hover .btnPurchase {
-    margin-top: 210px;
+    margin-top: 120px;
 }
 
 .adv-pk:nth-child(3):hover .btnPurchase {
-    margin-top: 170px;
+    margin-top: 80px;
 }
