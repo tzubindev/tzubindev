@@ -1,0 +1,108 @@
+.wrapper_all {
+  font-family: "Open Sans";
+  width: 70%;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  color: aqua;
+}
+
+
+.name-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0 none;
+  margin-top: 10px;
+}
+
+.name-table tr:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.name-table tr td {
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+.name-table tr td:first-child {
+  border-left: 0 none;
+}
+
+.name-table tr td{
+  text-align: center;
+}
+
+.name-table tr:nth-child(even) {
+  background-color: #FFFFFF10;
+}
+
+.name-table tr:hover {
+  background-color: #ffffff4B;
+}
+
+.name-table {
+  color: #ffffff;
+}
+
+
+.name-table tr.name-table-head td {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+}
+
+.name-table tr.name-table-head {
+  background-color: #7c7a81;
+  color: #FFFFFF;
+}
+
+
+.name-table td.price a {
+  background-color: #51457c;
+  color: #FFFFFF;
+  padding: 12px 32px;
+  margin-top: 0px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 64px;
+  text-decoration: none;
+}
+
+.search-title {
+  font-family: 'JetBrains Mono', monospace;
+  color: #fff;
+  background: #393939;
+  text-transform: uppercase;
+  position: absolute;
+  top: -10%;
+  left: 92%;
+  width: 100px;
+  height: 40px;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0 0 10px 4px #222;
+  cursor: default;
+  border: none;
+  text-align: left;
+}
+
+.searchbar input {
+  width: 300px;
+  height: 40px;
+  position: absolute;
+  top: -5%;
+  left: 11.5%;
+  background: #fff;
+  border-radius: 20px 20px 20px 20px;
+  text-align: center;
+  border: none;
+  box-shadow: 0 0 4px 2px #777;
+}
+
+.searchbar input:focus {
+  outline: none;
+}

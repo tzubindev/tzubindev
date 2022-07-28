@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-signin-client_id"
+    content="774376463782-n76ve5jv31kfm7jos35e3ec6kfes8siq.apps.googleusercontent.com">
+    
+  <!--Linking resources-->
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/role_managment.css">
+  <link href="http://fonts.cdnfonts.com/css/jsmath-cmmi10" rel="stylesheet">
+
+  <script src="js/search.js"></script> 
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=JetBrains+Mono:wght@600&family=Praise&family=Redressed&family=Smooch+Sans:wght@100&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="/HighQuali/favicon_io/favicon-16x16.png">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="logo">HighQuali</div>
+
+  <!--Top Navigation Bar-->
+  <div class="navBar">
+    <ul>
+      <li><a href="/HighQuali/index.html">HOME</a></li>
+      <li><a>ABOUT</a></li>
+      <li><a href="/HighQuali/Comparison.html">PRICING</a></li>
+      <li><a href="/HighQuali/career.html">CAREER</a></li>
+      <li><a>EVENT</a></li>
+      <li><a href="/HighQuali/dashboard_overview.html">DASHBOARD</a></li>
+      <li><span id="si" onclick="window.location.href='./login.html'">LOGIN</span></li>
+    </ul>
+  </div>
+
+  <div class="title">hipanel</div>
+  <div class="sub-title">Role Management</div>
+  <div class="sidebar">
+    <div class="selection-active">
+      <div><img src="https://img.icons8.com/ios/100/FFFFFF/health-data.png" /><a>Overview</a></div>
+    </div>
+    <div class="selection">
+      <div><img src="https://img.icons8.com/ios/100/FFFFFF/groups.png" /><a>Role Management</a></div>
+    </div>
+    <div class="selection">
+      <div><img src="https://img.icons8.com/ios/100/FFFFFF/planning-skill.png" /><a>Event Management</a></div>
+    </div>
+    <div class="selection">
+      <div><img src="https://img.icons8.com/ios/100/FFFFFF/topic.png" /><a>Message</a></div>
+    </div>
+    <div class="selection">
+      <div><img src="https://img.icons8.com/ios/100/FFFFFF/play-button-circled--v1.png" /><a>Live</a></div>
+    </div>
+    <div class="selection">
+      <div><img src="https://img.icons8.com/ios/100/FFFFFF/bearish.png" /><a>Analysis</a></div>
+    </div>
+    <br>
+    <br>
+    <hr>
+
+
+    <div class="selection">
+      <div><img src="https://img.icons8.com/ios/100/FFFFFF/user--v1.png" /><a>Profile</a></div>
+    </div>
+    <div class="selection">
+      <div><img src="https://img.icons8.com/ios/100/FFFFFF/settings--v1.png" /><a>Setting</a></div>
+    </div>
+  </div>
+
+  <div class="cont">
+    
+  </div>
+
+
+  <div class="wrapper_all">
+    <div class="searchbar">
+      <button type="button" class="search-title">Invite</button >
+      <input type="text" id="search_input" onkeyup="Filter_table(this.value)" style="margin-bottom: 16px;"
+      placeholder="Search.." class="">
+      <img src="https://img.icons8.com/ios/100/000000/search--v1.png" id="search" />
+    </div>
+    
+  
+    <table class="name-table" id="name_table">
+      <tbody>
+        <tr class="name-table-head">
+          <td>
+            Username
+          </td>
+          <td>
+            Email
+          </td>
+          <td>
+            Role
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Kellen
+          </td>
+          <td >
+            Kellen@gmail.com
+          </td>
+          <td>
+            Organiser
+          </td>
+        </tr>
+        <tr>
+          <td>Fehime</td>
+          <td>Fehime@gmail.com</td>
+          <td>Crew</td>
+        </tr>
+        <tr>
+          <td>Saeed</td>
+          <td>Saeed@gmail.com</td>
+          <td>Crew</td>
+        </tr>
+        <tr>
+          <td>Eva</td>
+          <td>Eva@gmail.com</td>
+          <td>Modifier</td>
+        </tr>
+        <tr>
+          <td>Ilanit</td>
+          <td>Ilanit@gmail.com</td>
+          <td>judge</td>
+        </tr>
+        <tr>
+          <td>Fintan</td>
+          <td>Fintan@gmail.com</td>
+          <td>participant</td>
+        </tr>
+        <tr>
+          <td>Erkki</td>
+          <td>Erkki@gmail.com</td>
+          <td>participant</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>
