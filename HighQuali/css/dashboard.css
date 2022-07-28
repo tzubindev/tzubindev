@@ -186,6 +186,12 @@ body {
 .sidebar a {
     width: 70%;
     margin-left: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar a:hover {
+    color: #fff;
 }
 
 .selection {
