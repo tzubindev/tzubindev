@@ -132,3 +132,49 @@ body {
 }
 
 /* basic setting above */
+
+.adv-tab{
+    position: absolute;
+    width: 25%;
+    height: 60%;
+    top: 10%;
+    overflow-y: scroll;
+    margin-top: 100px;
+}
+
+.adv {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.adv-com-img {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(rgb(196, 68, 68), rgb(112, 99, 221));
+    border-radius: 50%;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.adv-com-img img {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+
+.adv-com-name {
+    margin-left: -100px;
+    margin-top: 7px;    
+    color: #fff;
+    cursor: pointer;
+}
+
+.adv-job-name {
+    color: #fff;
+    cursor: pointer;
+}
