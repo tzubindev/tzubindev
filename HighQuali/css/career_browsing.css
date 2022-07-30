@@ -1,6 +1,6 @@
 html {
     background: #001725;
-    height: 700px;
+    height: 1200px;
 }
 
 * {
@@ -153,7 +153,7 @@ body {
 .adv-com-img {
     width: 60px;
     height: 60px;
-    background: linear-gradient(rgb(196, 68, 68), rgb(112, 99, 221));
+    background: linear-gradient(to bottom right, rgb(196, 68, 68), rgb(112, 99, 221));
     border-radius: 50%;
     margin-left: 30px;
     cursor: pointer;
@@ -228,6 +228,7 @@ body {
     position: relative;
     cursor: pointer;
     transition: border 200ms, margin-right 200ms, background 300ms;
+    border-radius: 3px;
 }
 
 .type:nth-child(3) {
@@ -296,4 +297,197 @@ body {
 
 #gps:hover::after {
     opacity: 1;  
+}
+
+.career-rel-event {
+    position: absolute;
+    left: 58%;
+    top: 28%;
+    width: 37%;
+    height: 195px;
+    color: #fff;
+    background: #c9c9c9;
+    color: #000;
+    border-radius: 5px;  
+    text-align: center;
+    text-transform: uppercase; 
+    font-family: 'JetBrains Mono', monospace;
+    line-height: 195px;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.job-section {
+    width: 65%;
+    height: 700px;
+    position: absolute;
+    left: 30%;
+    top: 57%;
+    margin-top: 40px;
+}
+
+.job{
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom right, rgb(199, 216, 122), rgb(68, 143, 145));
+    border-radius: 5px;
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;   
+    margin-bottom: 30px;
+}
+
+.job-com-logo {
+    width: 140px;
+    height: 140px;
+    border-radius: 5px;
+    background: #fff;
+    margin: 30px;
+    margin-top: 15px;
+    position: absolute;
+    text-align: center;
+    line-height: 140px;
+    cursor: default;
+}
+
+.job-com-name {
+    width: 140px;
+    margin: 30px;
+    margin-top: 165px;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+}
+
+.job-com-name::after {
+    content: '';
+    width: 0px;
+    height: 0.2em;
+    background: #000;
+    position: absolute;
+    top: 22px;
+    left: 15%;
+    transition: width 100ms;
+}
+
+.job-com-name:hover::after {
+    width: 70%;
+}
+
+.job-req-name {
+    position: absolute;
+    left: 23%;
+    margin-top: 15px;
+    background: rgb(51, 124, 126);
+    color: #fff;
+    padding: 4px 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+.job-req-name::after {
+    content: 'SAMPLE JOB NAME';
+    line-height: 40px;
+    padding-left: 20px;
+    width: 300px;
+    height: 40px;
+    background: rgb(93, 181, 184);
+    position: absolute;
+    top: 32px;
+    left: 0;
+    border-radius: 0 8px 8px;
+}
+
+.job-req-des {
+    position: absolute;
+    left: 23%;
+    margin-top: 95px;
+    background: rgb(51, 124, 126);
+    color: #fff;
+    padding: 4px 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+.job-req-des::after {
+    content: 'SAMPLE JOB DESCRIPTION';
+    line-height: 40px;
+    padding-left: 20px;
+    width: 600px;
+    height: 60px;
+    background: rgb(93, 181, 184);
+    position: absolute;
+    top: 32px;
+    left: 0;
+    border-radius: 0 8px 8px;
+}
+
+.job-posting-date {
+    position: absolute;
+    left: 55%;
+    margin-top: 15px;
+    background: rgb(51, 124, 126);
+    color: #fff;
+    padding: 4px 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+.job-posting-date::after {
+    content: '01 JAN 2022';
+    line-height: 40px;
+    padding-left: 20px;
+    width: 280px;
+    height: 40px;
+    background: rgb(93, 181, 184);
+    position: absolute;
+    top: 32px;
+    left: 0;
+    border-radius: 0 8px 8px;
+}
+
+.job-btn {
+    position: absolute;
+    right: 30px;
+    width: 100px;
+    text-align: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 200ms, color 100ms, border 200ms;
+}
+
+.btns .job-btn:nth-child(1) {
+    margin-top: 110px;
+    font-size: 14px;
+    border: rgb(9, 10, 70) 2px solid;
+    border-radius: 5px;
+}
+
+.btns .job-btn:nth-child(1):hover {
+    border: none;
+}
+
+.btns .job-btn:nth-child(2) {
+    margin-top: 150px;
+    font-size: 14px;
+    border-radius: 5px;
+    background: rgb(9, 10, 70);
+    color: #fff;
+}
+
+.btns .job-btn:nth-child(2):hover {
+    background: transparent;
+    color: rgb(9, 10, 70);
+}
+
+.btns .job-btn:nth-child(2)::after {
+    content: '';
+    width: 0px;
+    height: 3px;
+    background: rgb(9, 10, 70);
+    position: absolute;
+    top: 32px;
+    left: 0;
+    border-radius: 0 8px 8px;    
+    transition: width 200ms;
+}
+
+.btns .job-btn:nth-child(2):hover::after {
+    width: 100%;
 }
