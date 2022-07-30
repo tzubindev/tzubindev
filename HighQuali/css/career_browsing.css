@@ -1,6 +1,6 @@
 html {
     background: #001725;
-    height: 1200px;
+    height: 1250px;
 }
 
 * {
@@ -148,6 +148,11 @@ body {
     grid-template-columns: auto auto;
     margin-top: 10px;
     padding: 10px;
+    transition: background 200ms;
+}
+
+.adv:hover {
+    background: #999;
 }
 
 .adv-com-img {
@@ -293,10 +298,11 @@ body {
     font-family: 'JetBrains Mono', monospace;
     line-height: 40px; 
     transition: opacity 300ms;
+    z-index: 20;
 }
 
 #gps:hover::after {
-    opacity: 1;  
+    opacity: 1; 
 }
 
 .career-rel-event {
@@ -315,15 +321,21 @@ body {
     line-height: 195px;
     cursor: pointer;
     font-size: 28px;
+    transition: background 200ms;
+}
+
+.career-rel-event:hover {
+    background: #929292;
 }
 
 .job-section {
     width: 65%;
-    height: 700px;
+    height: 735px;
     position: absolute;
     left: 30%;
     top: 57%;
     margin-top: 40px;
+    overflow-y: scroll;
 }
 
 .job{
@@ -460,7 +472,7 @@ body {
 }
 
 .btns .job-btn:nth-child(1):hover {
-    border: none;
+    border: transparent 2px solid;
 }
 
 .btns .job-btn:nth-child(2) {
@@ -490,4 +502,29 @@ body {
 
 .btns .job-btn:nth-child(2):hover::after {
     width: 100%;
+}
+
+.adv-section {
+    width: 22%;
+    height: 500px;
+    left: 2%;
+    top: 88%;
+    position: absolute;
+}
+
+.sadv {
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    background: #b8b7b7;
+    margin-bottom: 10px;
+    line-height: 100px;
+    font-family: 'JetBrains Mono', monospace;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 200ms;
+}
+
+.sadv:hover {
+    background: #919191;
 }
