@@ -8,7 +8,7 @@
     <meta name="google-signin-client_id"
         content="774376463782-n76ve5jv31kfm7jos35e3ec6kfes8siq.apps.googleusercontent.com">
     <!--Linking resources-->
-    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/dashboard_live.css">
     <link href="http://fonts.cdnfonts.com/css/jsmath-cmmi10" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,13 +47,14 @@
     </div>
 
     <div class="title">hipanel</div>
-    <div class="sub-title">Overview</div>
+    <div class="sub-title">live</div>
     <div class="sidebar">
-        <div class="selection-active">
+        <div class="selection">
             <div><img src="https://img.icons8.com/ios/100/FFFFFF/health-data.png" /><a>Overview</a></div>
         </div>
         <div class="selection">
-            <div><img src="https://img.icons8.com/ios/100/FFFFFF/groups.png" /><a href="/HighQuali/role_managment.html">Role Management</a></div>
+            <div><img src="https://img.icons8.com/ios/100/FFFFFF/groups.png" /><a
+                    href="/HighQuali/role_managment.html">Role Management</a></div>
         </div>
         <div class="selection">
             <div><img src="https://img.icons8.com/ios/100/FFFFFF/planning-skill.png" /><a>Event Management</a></div>
@@ -61,11 +62,11 @@
         <div class="selection">
             <div><img src="https://img.icons8.com/ios/100/FFFFFF/topic.png" /><a>Message</a></div>
         </div>
-        <div class="selection">
-            <div><img src="https://img.icons8.com/ios/100/FFFFFF/play-button-circled--v1.png" /><a href="/HighQuali/dashboard_live.html">Live</a></div>
+        <div class="selection-active">
+            <div><img src="https://img.icons8.com/ios/100/FFFFFF/play-button-circled--v1.png" /><a>Live</a></div>
         </div>
         <div class="selection">
-            <div><img src="https://img.icons8.com/ios/100/FFFFFF/bearish.png"/><a>Analysis</a></div>
+            <div><img src="https://img.icons8.com/ios/100/FFFFFF/bearish.png" /><a>Analysis</a></div>
         </div>
         <br>
         <br>
@@ -78,80 +79,61 @@
             <div><img src="https://img.icons8.com/ios/100/FFFFFF/settings--v1.png" /><a>Setting</a></div>
         </div>
     </div>
-
-    <div class="searchbar">
-        <div class="search-title">Event</div>
-        <input type="text">
-        <img src="https://img.icons8.com/ios/100/000000/search--v1.png" id="search" />
-    </div>
-
-    <div class="summary-view">
-        <div class="summary-caption">
-            <div class="caption">
-                Event name
-            </div>
-            <div class="caption">
-                Date Created
-            </div>
-            <div class="caption">
-                End Date
-            </div>
-            <div class="caption">
-                Numbers of Crews
-            </div>
-            <div class="caption">
-                Main Organiser
-            </div>
+    <div class="calendar">
+        <div class="month">
+            <ul>
+                <li class="prev">&#10094;</li>
+                <li class="next">&#10095;</li>
+                <li>
+                    August<br>
+                    <span style="font-size:18px">2021</span>
+                </li>
+            </ul>
         </div>
-        <div class="summary-value">
-            <div class="value">
-                Event 1
-            </div>
-            <div class="value">
-                01.07.2021
-            </div>
-            <div class="value">
-                15.09.2021
-            </div>
-            <div class="value">
-                20
-            </div>
-            <div class="value">
-                Person 1
-            </div>
-        </div>
+
+        <ul class="weekdays">
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fr</li>
+            <li>Sa</li>
+            <li>Su</li>
+        </ul>
+
+        <ul class="days">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li><span class="active">10</span></li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            <li>31</li>
+        </ul>
     </div>
 
-    <div class="analysis-1">
-        <img src="https://img.icons8.com/ios/100/FFFFFF/edit-user-male.png" />
-        <p>New Participants Today</p>
-        <p>30</p>
-    </div>
-
-    <div class="analysis-2">
-        <img src="https://img.icons8.com/ios/100/ffffff/alarm.png" />
-        <p>New Message Today</p>
-        <p>12</p>
-    </div>
-
-    <div class="analysis-3">
-        <img src="https://img.icons8.com/ios/100/ffffff/estimates.png" />
-        <p>Estimated Budget</p>
-        <p>$ 3000</p>
-    </div>
-
-    <div class="analysis-4">
-        <img src="https://img.icons8.com/ios/100/FFFFFF/queue.png" />
-        <p>Total People Involved</p>
-        <p>125</p>
-    </div>
-
-    <br>
-    <br>
-
-    <hr class="overview-break">
-    <div class="analysis-title">Analysis</div>
-    <div id="curve_chart"></div>
-
-    <div class="know-more-btn"><p>Know More</p></div>
 </body>
