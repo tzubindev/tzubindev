@@ -508,3 +508,13 @@ body {
 .btnCreate:hover::after {
   width: 22%;
 } 
+
+.live-ana {
+  width: 43%;
+  height: 438px;
+  position: absolute;
+  top: 82.2%;
+  right: 3%;
+  background: #fff;
+
+}
