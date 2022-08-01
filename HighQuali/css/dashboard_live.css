@@ -1,6 +1,7 @@
 html {
     background: #01111b;
     height: 1000px;
+    overflow-x: hidden;
 }
 
 * {
@@ -11,7 +12,7 @@ html {
 
 body {
     min-height: 100vmin;
-    background: linear-gradient(#000, #01111b);
+    background: linear-gradient(#000a0f, #01111b);
     overflow: overlay;
 }
 
@@ -267,7 +268,7 @@ body {
 /* ----------------------------------------------- */
 .calendar {
     position: absolute;
-    width: 70%;
+    width: 56%;
     left: 22%;
     top: 20%;
 }
@@ -347,3 +348,54 @@ body {
     border-radius: 50%;
   }
   
+  .calendar-event {
+    width: 18%;
+    height: 403px;
+    position: absolute;
+    right: 3%;
+    top: 20%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    animation: calendar-event 2s 1;
+  }
+
+  @keyframes calendar-event {
+    0% { right: -20%;}
+    100% {right: 3%;}
+  }
+
+  .live-event {
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'JetBrains Mono', monospace;
+    transition: background 200ms, text-align 200ms;
+  }
+
+
+  .live-event:hover {
+    background: rgb(116, 116, 116);
+  }
+
+  .live-event a {
+    margin-left: 30%;
+    transition: margin-left 200ms;
+}
+
+  .live-event:hover a {
+    margin-left: 0%;
+  }
+
+  .live-more {
+    display: none;
+    position: absolute;
+    margin-top: -14.5%;
+    transition: display 200ms, right 2000ms;
+    text-transform: uppercase;
+  }
+
+  .live-event:hover .live-more {
+    display: unset;
+    right: 10px;
+  }
