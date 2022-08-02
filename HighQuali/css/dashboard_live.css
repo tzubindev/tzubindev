@@ -515,6 +515,59 @@ body {
   position: absolute;
   top: 82.2%;
   right: 3%;
-  background: #fff;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  color:#fff;
+  column-gap: 20px;
+  row-gap: 20px;
+}
 
+
+.ana {
+  background: #272536;
+  font-family: 'JetBrains Mono', monospace;
+  cursor: pointer;
+  transition: background 200ms;
+
+}
+
+.ana-topic{
+  text-align: left;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: color 200ms;
+}
+
+.ana-value {
+  width: 100%;
+  text-align: center;
+  line-height: 130px;
+  font-size: 30px;
+  transition: color 200ms;
+}
+
+.ana:hover {
+  background: #363449;
+}
+
+.ana:nth-child(2):hover .ana-topic {
+  color: #363449;
+}
+
+.ana:nth-child(2):hover .ana-value {
+  color: #363449;
+}
+
+.ana:nth-child(2)::after {
+  content: 'Live Name';
+  position: absolute;
+  left: 65%;
+  top: 20%;
+  font-size: 30px;
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+.ana:nth-child(2):hover::after {
+  opacity: 1;
 }
