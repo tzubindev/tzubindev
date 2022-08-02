@@ -43,6 +43,18 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+    $(".live-event").click(function () {
+        $("#live-detail").show();
+    });
+});
+
+$(document).ready(function () {
+    $("#btnClose").click(function () {
+        $("#live-detail").hide();
+    });
+});
+
 
 function clickType(obj) {
     var foo = document.getElementById("ft");
